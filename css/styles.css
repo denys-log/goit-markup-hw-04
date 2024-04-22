@@ -292,14 +292,18 @@ img {
   margin-bottom: 8px;
 }
 
-.team-item-socials {
+.team-item-info .socials-list {
   margin-top: 8px;
-  display: flex;
   gap: 24px;
 }
 
-.team-item-socials a {
-  display: block;
+/* social list icons */
+.socials-list {
+  display: flex;
+  gap: 16px;
+}
+
+.socials-list-item {
   width: 40px;
   height: 40px;
   display: flex;
@@ -309,7 +313,7 @@ img {
   border-radius: 50%;
 }
 
-.team-item-socials a svg {
+.socials-list-item svg {
   fill: var(--light-color);
 }
 
@@ -341,6 +345,10 @@ img {
   padding: 100px 0;
 }
 
+.footer .container {
+  display: flex;
+}
+
 .footer .logo {
   color: var(--light-color);
 }
@@ -348,6 +356,15 @@ img {
 .footer-info {
   margin-top: 16px;
   max-width: 264px;
+}
+
+.footer-socials {
+  margin-left: 160px;
+}
+
+.footer-socials-label {
+  font-weight: medium;
+  margin-bottom: 16px;
 }
 
 /* portfolio */
