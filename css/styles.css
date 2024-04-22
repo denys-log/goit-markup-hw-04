@@ -156,7 +156,12 @@ img {
   padding: 24px 0;
 }
 
-.menu-link::after {
+.menu-link.current {
+  position: relative;
+  color: var(--pressed-state-color);
+}
+
+.menu-link.current::after {
   content: '';
   position: absolute;
   bottom: -1px;
@@ -166,16 +171,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--pressed-state-color);
-  display: none;
-}
-
-.menu-link:hover {
-  position: relative;
-  color: var(--pressed-state-color);
-}
-
-.menu-link:hover::after {
-  display: block;
 }
 
 /* contacts */
