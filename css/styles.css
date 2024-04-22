@@ -313,6 +313,27 @@ img {
   fill: var(--light-color);
 }
 
+/* customers */
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--subtle-text-color);
+  height: 88px;
+  width: 168px;
+  border-radius: 5px;
+}
+
+.customers-list a svg {
+  fill: var(--subtle-text-color);
+}
+
 /* footer */
 .footer {
   background-color: var(--dark-color);
