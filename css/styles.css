@@ -156,6 +156,28 @@ img {
   padding: 24px 0;
 }
 
+.menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--pressed-state-color);
+  display: none;
+}
+
+.menu-link:hover {
+  position: relative;
+  color: var(--pressed-state-color);
+}
+
+.menu-link:hover::after {
+  display: block;
+}
+
 /* contacts */
 .contacts {
   display: flex;
