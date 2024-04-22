@@ -54,7 +54,9 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="btn btn-primary">Order Service</button>
+          <button type="button" class="btn btn-primary" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -452,5 +454,14 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal-overlay" data-modal></div>
+      <div class="modal-content">
+        <button type="button" data-modal-close>CLOSE</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
