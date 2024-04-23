@@ -455,10 +455,13 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <div class="modal-overlay" data-modal></div>
-      <div class="modal-content">
-        <button type="button" data-modal-close>CLOSE</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="icon icon-close" width="8" height="8">
+            <use xlink:href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
 
