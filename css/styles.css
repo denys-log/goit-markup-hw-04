@@ -36,11 +36,6 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  color: var(--pressed-state-color);
-}
-
 button {
   font-family: inherit;
   font-weight: 500;
@@ -97,6 +92,7 @@ img {
 .btn {
   border-radius: 4px;
   padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 15%);
 }
 
 .btn-primary {
@@ -156,6 +152,10 @@ img {
   padding: 24px 0;
 }
 
+.menu-link:hover {
+  color: var(--pressed-state-color);
+}
+
 .menu-link.current {
   position: relative;
   color: var(--pressed-state-color);
@@ -180,6 +180,10 @@ img {
   gap: 40px;
 }
 
+.contacts a:hover {
+  color: var(--pressed-state-color);
+}
+
 /* studio */
 .studio {
   background-color: var(--dark-color);
@@ -189,7 +193,8 @@ img {
     ),
     url('../images/people-office.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center center;
   text-align: center;
   padding: 188px 0;
 }
@@ -329,6 +334,14 @@ img {
   border-radius: 5px;
 }
 
+.customers-list a:hover {
+  border-color: var(--pressed-state-color);
+}
+
+.customers-list a:hover svg {
+  fill: var(--pressed-state-color);
+}
+
 .customers-list a svg {
   fill: var(--subtle-text-color);
 }
@@ -362,6 +375,10 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-socials .socials-list-item:hover {
+  background-color: var(--success-color);
+}
+
 /* portfolio */
 .portfolio-page-section {
   padding-top: 96px;
@@ -386,6 +403,8 @@ img {
   background-color: var(--pressed-state-color);
   color: var(--white-color);
   border-color: var(--pressed-state-color);
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 10%), 0 2px 1px 0 rgba(0, 0, 0, 8%),
+    0 2px 2px 0 rgba(0, 0, 0, 12%);
 }
 
 .portfolio-page-list {
@@ -397,6 +416,15 @@ img {
 
 .portfolio-page-item {
   width: calc((100% - (2 * var(--intent-col))) / 3);
+}
+
+.portfolio-page-item a {
+  display: block;
+}
+
+.portfolio-page-item a:hover {
+  box-shadow: 0 1px 6px rgba(46, 47, 66, 8%), 0 1px 1px rgba(46, 47, 66, 16%),
+    0 2px 1px rgba(46, 47, 66, 8%);
 }
 
 .portfolio-page-item-img {
