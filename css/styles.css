@@ -442,8 +442,27 @@ img {
     0 2px 1px rgba(46, 47, 66, 8%);
 }
 
+.portfolio-page-item a:hover .portfolio-page-item-desc {
+  transform: translateY(0%);
+}
+
 .portfolio-page-item-img {
+  overflow: hidden;
   height: 300px;
+  position: relative;
+}
+
+.portfolio-page-item-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 32px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  transform: translateY(100%);
+  transition: transform var(--transition);
 }
 
 .portfolio-page-item-img img {
